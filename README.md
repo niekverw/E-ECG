@@ -1,5 +1,5 @@
 # E-ECG
-Method for obataining reliable normal R to R intervals in exercise ECGs.
+Method for obtaining reliably measured normal-to-normal RR intervals in exercise ECGs, quality control measurements and plots.
 
 ##Further documentation will be added at a later time
 
