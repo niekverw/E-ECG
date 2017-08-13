@@ -11,3 +11,4 @@ run using `Rscript E-ECG.main.R example/example_participants.qrs.csv` to create 
 ![RR](example.jpg "example RR interval profile")
 
 
+pr = rest phase (before exercise starts), ex= exercise phase , re = recovery phase. 
