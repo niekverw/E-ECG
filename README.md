@@ -20,7 +20,7 @@ run using `Rscript E-ECG.main.R example/example_participants.qrs.csv` to create 
 - RR_[pr,ex,re]_duration - Total duration of each phase 
 - RR_pr_mean - Resting heart rate (mean heart rate in pretest)
 - RR_ex_min - Peak RR during exercise
-- RR_re_mean3s[10..50] - Heart rate recovery at [10..50] seconds.
+- RR_re_mean3s[10..50] - Heart rate during the recovery phase at [10..50] seconds.
 - RR_[pr,ex,re]_slidingSdSdTsc - Standard deviation over a rolling standard deviation with a window of 3 beats; used in outlier detection explained in more detail below 
 
 #### Outliers detection
