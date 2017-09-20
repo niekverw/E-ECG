@@ -23,5 +23,5 @@ run using `Rscript E-ECG.main.R example/example_participants.qrs.csv` to create 
 - RR_re_mean3s[10..50] - Heart rate during the recovery phase at [10..50] seconds.
 - RR_[pr,ex,re]_slidingSdSdTsc - Standard deviation over a rolling standard deviation with a window of 3 beats; used in outlier detection explained in more detail below 
 
-#### Outliers detection
+#### ECG Outlier/noise detection
 Adjacent normal-to-normal RR intervals are expected to be proximal to each-other, therefore a standard deviation (of a rolling standard deviation in 3 beat windows) near zero suggests little to no deviation in the RR detection, whereas severe deviation from zero strongly indicates an aberrant detection of RR peaks. The median standard deviation was 0.0065 seconds, an extreme value of >0.05 seconds (98%th percentile) was considered to be excess noise and confirmed by manually inspection of the RR intervals.
