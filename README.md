@@ -12,3 +12,15 @@ run using `Rscript E-ECG.main.R example/example_participants.qrs.csv` to create 
 
 
 *pr = rest phase (before exercise starts), ex= exercise phase , re = recovery phase.*
+
+
+### Variables names of interest
+- maxmets - Maximum achieved exercise workload
+- DurationECG - Total duration of the ecg. 
+- RR_[pr,ex,re]_duration - Total duration of each phase 
+- RR_pr_mean - Resting heart rate (mean heart rate in pretest)
+- RR_ex_min - Peak RR during exercise
+- RR_[pr,ex,re]_slidingSdSdTsc - Standard deviation over a rolling standard deviation with a window of 3 beats; used in outlier detection explained in more detail below 
+
+#### Outliers detection
+Adjacent normal-to-normal RR intervals are expected to be proximal to each-other, therefore a standard deviation (of a rolling standard deviation in 3 beat windows) near zero suggests little to no deviation in the RR detection, whereas severe deviation from zero strongly indicates an aberrant detection of RR peaks. The median standard deviation was 0.0065 seconds, an extreme value of >0.05 seconds (98%th percentile) was considered to be excess noise and confirmed by manually inspection of the RR intervals.
