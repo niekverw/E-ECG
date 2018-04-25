@@ -27,5 +27,5 @@ run using `Rscript E-ECG.main.R example/example_participants.qrs.csv` to create 
 Adjacent normal-to-normal RR intervals are expected to be proximal to each-other, therefore a standard deviation (of a rolling standard deviation in 3 beat windows) near zero suggests little to no deviation in the RR detection, whereas severe deviation from zero strongly indicates an aberrant detection of RR peaks. The median standard deviation was 0.0065 seconds, an extreme value of >0.05 seconds (98%th percentile) was considered to be excess noise and confirmed by manually inspection of the RR intervals.
 
 #### References
-https://www.nature.com/articles/s41467-018-03395-6
-http://jaha.ahajournals.org/content/7/8/e008341
+- https://www.nature.com/articles/s41467-018-03395-6
+- http://jaha.ahajournals.org/content/7/8/e008341
